@@ -1,0 +1,32 @@
+
+#maria{
+
+   height:60px;
+}
+
+ .page1{
+   background: url("../assets/images/homepage.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   height:100%;
+   width:100%;
+   position: relative;
+   /*bottom: 83px;*/
+   z-index: 1;
+ }
+
+h1{
+  color: white;
+  font: helvetica;
+  text-align: center;
+  z-index: 2;
+  padding-top: 120px;
+}
+ /*h4 {
+color: white;
+font: helvetica;
+text-align: center;
+z-index: 2;
+padding-top:200px;
+
+}*/

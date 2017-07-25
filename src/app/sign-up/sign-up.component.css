@@ -1,0 +1,7 @@
+.separator{
+  height: 50px;
+  width:100%;
+  border: solid black 2px;
+  position: relative;
+  bottom: 100px;
+}
