@@ -3,9 +3,27 @@
     height: 100%;
     width:100%;
     border: solid black 2px;
-    position: relative;
-    bottom: 100px;
+    /*padding-left: 500px;*/
+    background: url("../../assets/images/wood1.png");
+    background-size: cover;
+    background-repeat: repeat;
+    color:black;
+}
 
+.boxforimages{
+  height: 100%;
+  width:100%;
+  /*text-align: center;*/
+  /*display: inline;*/
+}
 
-  
+#sizes{
+  height: 200px;
+  /*display: inline-block;*/
+}
+
+ul > li {
+  display: inline-block;
+  list-style-type: none;
+
 }

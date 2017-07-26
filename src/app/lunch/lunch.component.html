@@ -1,0 +1,21 @@
+
+<div class="lunchcomp">
+
+<h1> Lunch Ideas </h1>
+<div>
+  <div class='boxforimages'>
+<div class="row">
+<ul>
+  <li *ngFor="let lunchs of lunchList" class="col-md-3">
+
+    <h3> {{ lunchs.name }}</h3>
+    <p> Calories Amount: {{ lunchs.calories}}</p>
+    <img id='sizes' src="{{lunchs.image}}">
+
+</li>
+</ul>
+<!-- <p> {{breakfastList}}</p> -->
+
+  </div>
+</div>
+</div>

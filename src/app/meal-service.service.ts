@@ -8,18 +8,23 @@ export class MealServiceService {
     constructor(private myHttp: Http) {}
 
     getBreakfast() {
-     return this.myHttp.get(`${this.BASE_URL}/api/breakfast`)
+     return this.myHttp.get(`${this.BASE_URL}/api/breakfast`, {withCredentials: true})
        .map((res) => res.json());
    }
 
    getLunch() {
-    return this.myHttp.get(`${this.BASE_URL}/api/lunch`)
+    return this.myHttp.get(`${this.BASE_URL}/api/lunch`,{withCredentials: true})
       .map((res) => res.json());
 
   }
   getDinner() {
-   return this.myHttp.get(`${this.BASE_URL}/api/dinner`)
+   return this.myHttp.get(`${this.BASE_URL}/api/dinner`,{withCredentials: true})
      .map((res) => res.json());
+ }
+
+ postBreakfast(){
+   return this.myHttp.post(`${this.BASE_URL}/api/breakfast`, {withCredentials: true})
+   .map((res) => res.json());
  }
 
 }

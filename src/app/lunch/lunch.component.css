@@ -1,0 +1,32 @@
+.lunchcomp{
+
+    height: 100%;
+    width:100%;
+    border: solid black 2px;
+    /*padding-left: 500px;*/
+    background: url("../../assets/images/wood3.png");
+    background-size: cover;
+    background-repeat: repeat;
+    color:black;
+}
+
+.boxforimages{
+  height: 100%;
+  width:100%;
+  /*text-align: center;*/
+  /*display: inline;*/
+}
+h1{
+  padding-left: 550px;
+}
+
+#sizes{
+  height: 200px;
+  /*display: inline-block;*/
+}
+
+ul > li {
+  display: inline-block;
+  list-style-type: none;
+
+}

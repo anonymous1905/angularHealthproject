@@ -16,7 +16,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="#"> Home <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Week Plan</a></li>
+        <li [routerLinkActive]="['active']"> <a [routerLink]="['/addmeal']">Add a Meal</a></li>
         <li><a href="https://www.ubereats.com"> OrderFood </a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Latest Heathy Meal News <span class="caret"></span></a>
@@ -32,9 +32,10 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Meals <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Breakfast</a></li>
-            <li><a href="#">Lunch</a></li>
-            <li><a href="#">Dinner</a></li>
+            <!-- <li [routerLinkActive]="['active']"> <a [routerLink]="['/']">Home</a></li> -->
+            <li [routerLinkActive]="['active']"> <a [routerLink]="['/breakfast']">Breakfast</a></li>
+            <li [routerLinkActive]="['active']"> <a [routerLink]="['/lunch']">Lunch</a></li>
+            <li [routerLinkActive]="['active']"> <a [routerLink]="['/dinner']">Dinner</a></li>
 
           </ul>
         </li>
@@ -56,13 +57,25 @@
   <div>
   <h1> Welcome to Eat Healthy Live Longer </h1>
 
-  <!-- <h4> We are here to help you plan your weekyly meals </h4> -->
+  <h3> EATING HEALTHY JUST GOT SUPER EASY </h3>
+
+<div class="image1">
+  <img src="../assets/images/goodfood.png">
+</div>
+
+<div class="image2">
+  <img src="../assets/images/organic.png">
+</div>
+
+
 </div>
 </div>
 <app-sign-up></app-sign-up>
 <hr>
+<app-log-in></app-log-in>
 <app-sign-up2></app-sign-up2>
 
 <app-weekplan></app-weekplan>
-<app-sign-up></app-sign-up>
-<app-breakfast></app-breakfast>
+
+
+ <router-outlet></router-outlet>

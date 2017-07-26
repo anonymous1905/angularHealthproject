@@ -1,0 +1,22 @@
+
+
+
+<form (ngSubmit)="saveNewMeal()">
+    <label for="meal-name-input"> Meal Name </label>
+    <input  id="meal-name-input" type="text" placeholder="Pasta"
+        [(ngModel)]="breakfastName" name="breakfastName">
+    <br>
+
+    <label for="meal-calorie-input"> Calories </label>
+    <input  id="meal-calorie-input" type="number"
+        [(ngModel)]="breakfastCalories" name="breakfastCalories">
+    <br>
+
+
+    <label for="meal-picture-input"> Meal Picture </label>
+    <input  id="meal-picture-input" type="text" name="mealPicture"
+    [(ngModel)]="breakfastImage" name="breakfastImage">
+    <br>
+
+    <button> Save Breakfast Meal </button>
+  </form>

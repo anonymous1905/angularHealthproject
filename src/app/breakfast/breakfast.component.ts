@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { MealServiceService } from '../meal-service.service';
 
 @Component({
@@ -8,16 +9,18 @@ import { MealServiceService } from '../meal-service.service';
 })
 export class BreakfastComponent implements OnInit {
   breakfastList = [];
+  myBreakfastListError ='';
 
-  constructor(private myBreakfastService: MealServiceService) { }
+  constructor(
+    private myBreakfastService: MealServiceService
+  ) { }
 
   ngOnInit() {
     this.myBreakfastService.getBreakfast()
     .subscribe((myBreakfastList)=>{
       this.breakfastList = myBreakfastList;
+
     });
-
-
   }
 
 }

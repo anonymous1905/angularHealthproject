@@ -11,7 +11,7 @@ export class WebsiteService {
 
 
   // an argument for each "req.body" in the API route
-  signup(theFullName, theEmail, theUsername, thePassword) {
+  signup(theFullName, theEmail, thePassword) {
       return this.httpThang
         .post(
           'http://localhost:3000/api/signup',
@@ -20,7 +20,6 @@ export class WebsiteService {
           {
             signupFullName: theFullName,
             signupEmail: theEmail,
-            signupUsername: theUsername,
             signupPassword: thePassword
           },
 

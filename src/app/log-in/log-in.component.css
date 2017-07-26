@@ -1,0 +1,30 @@
+.login{
+  height: 100%;
+  width:100%;
+  border: solid black 2px;
+  position: relative;
+  bottom: 100px;
+  background: url("../../assets/images/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-left: 600px;
+  padding-top: 180px;
+  color: black;
+
+}
+.Login{
+
+  padding-top: 100px;
+}
+
+/*.picturelogos{
+  display: inline;
+  width:100%;
+}*/
+
+
+
+.pic3{
+      padding-left: 410px;
+      height: 250px;
+  }

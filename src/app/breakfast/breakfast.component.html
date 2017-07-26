@@ -2,15 +2,19 @@
 
 <h1> Breakfast Ideas </h1>
 <div>
-  <!-- <div ngFor="let breakfasts of breakfastList"> -->
-    <!-- <img src='{{breakfasts.breakfastImage}}'/> -->
+  <div class='boxforimages'>
+<div class="row">
+<ul>
+  <li *ngFor="let breakfasts of breakfastList" class="col-md-3">
 
-    <!-- <h3> {{ breakfasts.breakfastName}}</h3>
-    <p> {{ breakfasts.breakfastCalories}}</p> -->
+    <h3> {{ breakfasts.name }}</h3>
+    <p> Calories Amount: {{ breakfasts.calories}}</p>
+    <img id='sizes' src="{{breakfasts.image}}">
 
-<p> {{breakfastList}}</p>
-
+</li>
+</ul>
+<!-- <p> {{breakfastList}}</p> -->
 
   </div>
-
+</div>
 </div>

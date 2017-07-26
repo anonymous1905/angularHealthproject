@@ -33,7 +33,8 @@ fullNameValue: string;
     this.authThang.checklogin()
       // If success, we are logged in.
       .then((resultFromApi) => {
-          this.routerThang.navigate(['/camels']);
+          this.isLoggedOut = false;
+          this.routerThang.navigate(['']);
       })
 
       // Even if you don't do anything on error, catch to avoid a console error.
@@ -53,7 +54,7 @@ fullNameValue: string;
           this.errorMessage = "";
 
           // redirect to /camels
-          this.routerThang.navigate(['/camels']);
+          this.routerThang.navigate(['']);
       })
       .catch((err) => {
           const parsedError = err.json();
@@ -62,6 +63,7 @@ fullNameValue: string;
   } // close doSignUp()
 
   doLogin() {
+    console.log('doing the login');
     this.authThang.login(this.loginEmail, this.loginPassword)
       .then((resultFromApi) => {
           // clear the form
@@ -72,9 +74,10 @@ fullNameValue: string;
           this.loginErrorMessage = "";
 
           // redirect to /camels
-          this.routerThang.navigate(['/camels']);
+          
       })
       .catch((err) => {
+        console.log('fuck');
           const parsedError = err.json();
           this.loginErrorMessage = parsedError.message + ' 😤';
       });

@@ -34,7 +34,7 @@ export class SignUp2Component implements OnInit {
     this.authThang.checklogin()
       // If success, we are logged in.
       .then((resultFromApi) => {
-          this.routerThang.navigate(['/camels']);
+
       })
 
       // Even if you don't do anything on error, catch to avoid a console error.
@@ -44,7 +44,8 @@ export class SignUp2Component implements OnInit {
   }
 
   doSignUp() {
-    this.authThang.signup(this.fullNameValue, this.emailValue, this.usernameValue, this.passwordValue)
+    console.log("lucky");
+    this.authThang.signup(this.fullNameValue, this.emailValue, this.passwordValue)
       .then((resultFromApi) => {
           // clear form
           this.fullNameValue = "";
@@ -54,9 +55,8 @@ export class SignUp2Component implements OnInit {
 
           // clear error message
           this.errorMessage = "";
-
           // redirect to /camels
-          this.routerThang.navigate(['/camels']);
+
       })
       .catch((err) => {
           const parsedError = err.json();
@@ -74,8 +74,7 @@ export class SignUp2Component implements OnInit {
           // clear the error message
           this.loginErrorMessage = "";
 
-          // redirect to /camels
-          this.routerThang.navigate(['/camels']);
+          // redirect to /camels']);
       })
       .catch((err) => {
           const parsedError = err.json();
