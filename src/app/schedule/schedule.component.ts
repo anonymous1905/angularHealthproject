@@ -12,6 +12,11 @@ export class ScheduleComponent implements OnInit {
   weeklyList = [];
   myBreakfastListError ='';
 
+
+  breakfastArray = [];
+  lunchArray =[];
+  dinnerArray = [];
+
   constructor(
     private myWeeklyService: MealServiceService
   ) { }
@@ -34,6 +39,7 @@ getOneOfEach() {
       console.log(array+ "aleluia");
       const randomIndex = getRandomNumber(array.length);
       randomItems.push(array[randomIndex]);
+      array = this.breakfastArray
 
     })
 
@@ -53,7 +59,4 @@ getOneOfEach() {
     })
 
   }
-getCalories(){
-
-}
 }

@@ -2,14 +2,35 @@
 <div>
 <h1> Weekly Schedule </h1>
 </div>
-
+<div class="inlineB">
 <h2> Monday</h2>
 
-<h4>  Breakfast {{weeklyList[0].name}} </h4>
-<h4>  Lunch {{weeklyList[1].name}} </h4>
-<h4>  Dinner {{weeklyList[2].name}} </h4>
+<h4>  Breakfast </h4>
+  <h4>{{ weeklyList[0].name}}</h4>
+<img id='sizes' src="{{weeklyList[0].image}}">
+<h4> Calories: {{ weeklyList[0].calories}} </h4>
+
+<br>
+
+
+
+<h4>  Lunch </h4>
+  <h4> {{weeklyList[1].name}} </h4>
+<img id='sizes' src="{{weeklyList[1].image}}">
+<h4>  Calories: {{weeklyList[1].calories}} </h4>
+
+<br>
+
+
+
+<h4>  Dinner </h4>
+  <h4>{{weeklyList[2].name}} </h4>
+<img id='sizes' src="{{weeklyList[2].image}}">
+<h4> Calories: {{weeklyList[2].calories}}} </h4>
 
 <h2>  Total Calories : {{weeklyList[0].calories + weeklyList[1].calories + weeklyList[2].calories}} </h2>
+</div>
+
 
 <h2> Tuesday </h2>
 

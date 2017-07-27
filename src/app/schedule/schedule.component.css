@@ -9,3 +9,10 @@
     background-repeat: repeat;
     color:black;
 }
+#sizes{
+  height: 150px;
+}
+.inlineB {
+  display: inline-block;
+  float: right;
+}

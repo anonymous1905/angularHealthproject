@@ -2,6 +2,7 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
+import { environment} from '../environments/environment';
 
 @Injectable()
 export class AuthServiceService {
@@ -15,7 +16,7 @@ export class AuthServiceService {
   signup(theFullName, theEmail, thePassword) {
       return this.httpThang
         .post(
-          'http://localhost:3000/api/signup',
+          environment.apiBase + '/api/signup',
 
           // Form body information to send to the back end (req.body)
           {

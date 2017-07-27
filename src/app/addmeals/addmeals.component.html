@@ -1,5 +1,7 @@
 
 <div class="breakfastcomp">
+<div class="formDiv">
+    <h2> Add A breakfast </h2>
 
 <form (ngSubmit)="saveNewMeal()">
     <label for="meal-name-input"> Meal Name </label>
@@ -22,7 +24,9 @@
   </form>
 <br>
 
-  <form (ngSubmit)="saveNewMeal1()">
+      <h2> Add a Lunch</h2>
+
+      <form (ngSubmit)="saveNewMeal1()">
       <label for="meal-name-input"> Lunch Name </label>
       <input  id="meal-name-input" type="text" placeholder="Grilled Squid"
           [(ngModel)]="lunchName" name="lunchName">
@@ -41,6 +45,8 @@
 
       <button> Save Lunch Meal </button>
     </form>
+
+        <h2> Add a Dinner </h2>
 
 <br>
 <form (ngSubmit)="saveNewMeal2()">
@@ -63,5 +69,5 @@
     <button> Save Dinner Meal </button>
   </form>
 
-
+</div>
 </div>
