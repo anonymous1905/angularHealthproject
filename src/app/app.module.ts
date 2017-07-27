@@ -19,6 +19,7 @@ import { LogInComponent } from './log-in/log-in.component';
 import { LunchComponent } from './lunch/lunch.component';
 import { DinnerComponent } from './dinner/dinner.component';
 import { AddmealsComponent } from './addmeals/addmeals.component';
+import { ScheduleComponent } from './schedule/schedule.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { AddmealsComponent } from './addmeals/addmeals.component';
     DinnerComponent,
     AddmealsComponent,
     FileSelectDirective,
+    ScheduleComponent,
     
   ],
   imports: [

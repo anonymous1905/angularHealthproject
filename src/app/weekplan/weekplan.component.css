@@ -7,5 +7,10 @@
   background: url("../../assets/images/logino.png");
   background-size: cover;
   background-repeat: no-repeat;
+  color: white;
 
+}
+
+h4{
+    margin-left: 400px;
 }

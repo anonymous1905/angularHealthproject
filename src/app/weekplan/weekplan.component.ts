@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { MealServiceService } from '../meal-service.service';
 
 @Component({
   selector: 'app-weekplan',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WeekplanComponent implements OnInit {
 
-  constructor() { }
+  weeklyList = [];
+  myBreakfastListError ='';
+
+  constructor(
+    private myWeeklyService: MealServiceService
+  ) { }
 
   ngOnInit() {
+    // this.myWeeklyService.getOneOfEach()
+    // .subscribe((myWeeklyList)=>{
+    //   this.weeklyList = myWeeklyList;
+    //
+    // });
   }
-
 }

@@ -1,0 +1,11 @@
+.breakfastcomp{
+
+    height: 100%;
+    width:100%;
+    border: solid black 2px;
+    /*padding-left: 500px;*/
+    background: url("../../assets/images/zcalendar.png");
+    background-size: cover;
+    background-repeat: repeat;
+    color:black;
+}

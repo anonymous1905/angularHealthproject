@@ -1,5 +1,5 @@
 
-
+<div class="breakfastcomp">
 
 <form (ngSubmit)="saveNewMeal()">
     <label for="meal-name-input"> Meal Name </label>
@@ -20,3 +20,48 @@
 
     <button> Save Breakfast Meal </button>
   </form>
+<br>
+
+  <form (ngSubmit)="saveNewMeal1()">
+      <label for="meal-name-input"> Lunch Name </label>
+      <input  id="meal-name-input" type="text" placeholder="Grilled Squid"
+          [(ngModel)]="lunchName" name="lunchName">
+      <br>
+
+      <label for="meal-calorie-input"> Calories </label>
+      <input  id="meal-calorie-input" type="number"
+          [(ngModel)]="lunchCalories" name="lunchCalories">
+      <br>
+
+
+      <label for="meal-picture-input"> Meal Picture </label>
+      <input  id="meal-picture-input" type="text" name="mealPicture"
+      [(ngModel)]="lunchImage" name="lunchImage">
+      <br>
+
+      <button> Save Lunch Meal </button>
+    </form>
+
+<br>
+<form (ngSubmit)="saveNewMeal2()">
+    <label for="meal-name-input"> Lunch Name </label>
+    <input  id="meal-name-input" type="text" placeholder="Soup"
+        [(ngModel)]="dinnerName" name="dinnerName">
+    <br>
+
+    <label for="meal-calorie-input"> Calories </label>
+    <input  id="meal-calorie-input" type="number"
+        [(ngModel)]="dinnerCalories" name="dinnerCalories">
+    <br>
+
+
+    <label for="meal-picture-input"> Meal Picture </label>
+    <input  id="meal-picture-input" type="text" name="mealPicture"
+    [(ngModel)]="dinnerImage" name="dinnerImage">
+    <br>
+
+    <button> Save Dinner Meal </button>
+  </form>
+
+
+</div>

@@ -4,8 +4,8 @@ import { AppComponent } from './app.component';
 import { BreakfastComponent } from './breakfast/breakfast.component';
 import { LunchComponent } from './lunch/lunch.component';
 import { DinnerComponent } from './dinner/dinner.component';
-
-
+import { AddmealsComponent } from './addmeals/addmeals.component';
+import { ScheduleComponent } from './schedule/schedule.component';
 const routes: Routes = [
   {
     path: '',
@@ -24,9 +24,14 @@ const routes: Routes = [
     component: DinnerComponent
   },
   {
-    path:'breakfast',
-    component: BreakfastComponent
+    path:'addmeal',
+    component: AddmealsComponent
   },
+  {
+    path:'weekplan',
+    component: ScheduleComponent
+  },
+
 
 
 ];
